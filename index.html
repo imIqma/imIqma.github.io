@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="sub-grid justify-center header">
+            <div class="align-end">
+                <h1>IQMA</h1>
+            </div>
+            <div id="navbar" class="">
+                <a href="#section1">About</a>
+                <a href="#section2">Image</a>
+                <a href="#section3">Video</a>
+                <a href="#section4">Audio</a>
+                <a href="#section5">Feedback</a>
+            </div>
+        </div>
+        <div class="about sub-grid justify-center align-center" id="section1">
+            <div class="content">
+                <div class="sub-grid justify-center">
+                    <h1 class="margin-bot">About Me</h1>
+                    <img src="https://image.flaticon.com/icons/svg/145/145867.svg" class="gap">
+                </div>
+                <div class="center">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Muhamad Iqmarudin bin Bahrudin</td>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth</th>
+                            <td>8<sup>th</sup> October 1998</td>
+                        </tr>
+                        <tr>
+                            <th>Place of Birth</th>
+                            <td>Limbang</td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td>Male</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="hobby sub-grid justify-center align-center" id="section2">
+            <div class="content">
+               <div class="sub-grid justify-center">
+                    <h1 class="margin-bot">My Hobby</h1>
+                    <p>During my free time, I always read Light Novel. I'll recommend these book for those who want to spend some time by reading books</p>
+               </div>
+               
+                <div class="image-grid justify-center gap text-center">
+                    <div class="top">
+                        <img src="https://vignette.wikia.nocookie.net/konosuba/images/1/19/Konosuba_Volume_2_Cover.png/revision/latest?cb=20171110053943" alt="konosuba vol 2">
+                        <p>Love, Witches & Other Delusions!</p>
+                    </div>
+                    <div class="mid">
+                        <img src="https://vignette.wikia.nocookie.net/date-a-live/images/4/42/DAL_v02.jpg/revision/latest/scale-to-width-down/1000?cb=20170123115524" alt="Yoshino Puppet">
+                        <p>Yoshino Puppet</p>
+                    </div>
+                    <div class="bot">
+                        <img src="https://vignette.wikia.nocookie.net/konosuba/images/2/2f/Bakuen_Volume_2_Cover.jpg/revision/latest?cb=20170121013922" alt="Yunyun's Turn!">
+                        <p>Yunyun's Turn!</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="video sub-grid justify-center align-center" id="section3">
+            <div class="content">
+                <div class="sub-grid justify-center">
+                    <h1 class="margin-bot">My Hobby</h1>
+                        <p>Besides that, I also love to listen to music. I always find my favorite song on YouTube. Just like the video below.</p>
+                </div>
+                    
+                <div class="gap sub-grid justify-center">
+                        <iframe  width="560" height="315" src="https://www.youtube.com/embed/ZLJHC_qBt4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="audio sub-grid justify-center align-center" id="section4">
+            <div class="content">
+                <div class="sub-grid justify-center">
+                    <h1 class="margin-bot">My Hobby</h1>
+                            <p>If I want to listen to a more high quality song, I will find it in SoundCloud. Just like the song below which can be streamed form SoundCloud</p>
+                </div>
+                        
+                <div class="sub-grid justify-center gap">
+                    <iframe width="300" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/569652384&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="feedback sub-grid justify-center align-center" id="section5">
+            <div class="content">
+                <h1>Anything to improve?</h1>
+                <div class="gap">
+                    <table>
+                        <tr>
+                            <td>Username: </td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Comment: </td>
+                            <td><textarea name="Comment"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="end"><button type="submit" onclick="received()">Submit</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer sub-grid justify-center align-center">
+            <div class="sub-grid justify-center">
+                <p>ASSIGNMENT CSC318</p>
+                <p>&copy;Iqma</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var width = window.innerWidth;
+        console.log(width);
+
+        window.onscroll = function() {myFunction()};
+            
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        const header = document.querySelector(".align-end");
+            
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+                header.classList.add("hidden");
+            } else {
+                navbar.classList.remove("sticky");
+                header.classList.remove("hidden");
+            }
+        }
+
+        function received() {
+            alert("Comment Received");
+        }
+
+        
+    </script>
+</body>
+</html>
