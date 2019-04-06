@@ -173,6 +173,10 @@ p {
     text-align: center;
 }
 
+.margin-bot {
+    margin-bottom: 20px;
+}
+
 /* text properties end /*
 
 /* form properties start */
