@@ -265,8 +265,9 @@ span {
     position: fixed;
     left: 0;
     top: 0;
-    font-size: 30px;
-    margin: 10px 20px;
+    font-size: 20px;
+    margin: 10px 10px;
+    color: white;
 }
 
 .none {
