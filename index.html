@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="grid">
         <div class="sub-grid justify-center header">
-            <div class="align-end">
+            <div id="title" class="iqma">
                 <h1>IQMA</h1>
             </div>
-            <div id="navbar" class="">
-                <a href="#section1">About</a>
-                <a href="#section2">Image</a>
-                <a href="#section3">Video</a>
-                <a href="#section4">Audio</a>
-                <a href="#section5">Feedback</a>
+            <div id="navbar">
+                <a href="#section1" id="link">About</a>
+                <a href="#section2" id="link2">Image</a>
+                <a href="#section3" id="link3">Video</a>
+                <a href="#section4" id="link4">Audio</a>
+                <a href="#section5" id="link5">Feedback</a>
             </div>
+            <span id="toggle" onclick="openNav()">&#9776;</span>
         </div>
         <div class="about sub-grid justify-center align-center" id="section1">
             <div class="content">
@@ -81,7 +83,9 @@
                 </div>
                     
                 <div class="gap sub-grid justify-center">
+                    <div class="youtube">
                         <iframe  width="560" height="315" src="https://www.youtube.com/embed/ZLJHC_qBt4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,11 +93,13 @@
             <div class="content">
                 <div class="sub-grid justify-center">
                     <h1 class="margin-bot">My Hobby</h1>
-                            <p>If I want to listen to a more high quality song, I will find it in SoundCloud. Just like the song below which can be streamed form SoundCloud</p>
+                        <p>If I want to listen to a more high quality song, I will find it in SoundCloud. Just like the song below which can be streamed form SoundCloud</p>
                 </div>
                         
                 <div class="sub-grid justify-center gap">
-                    <iframe width="300" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/569652384&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div class="soundcloud">
+                        <iframe  scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/569652384&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +130,7 @@
             </div>
         </div>
     </div>
-
+<!--
     <script>
         var width = window.innerWidth;
         console.log(width);
@@ -150,6 +156,6 @@
         }
 
         
-    </script>
+    </script>-->
 </body>
 </html>
