@@ -53,12 +53,13 @@ function openNav() {
     document.getElementById("navbar").style.width = "250px";
 
     var link6 = document.getElementById("link6");
-    link6.classList.remove("hidden");
+    link6.classList.remove("none");
+    link6.classList.add("out");
 }
   
 function closeNav() {
     document.getElementById("navbar").style.width = "0";
 
     var link6 = document.getElementById("link6");
-    link6.classList.add("hidden");
+    link6.classList.add("none");
 }

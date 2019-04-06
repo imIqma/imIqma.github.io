@@ -252,11 +252,11 @@ input, textarea {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.closebtn {
   position: fixed;
   bottom: 0;
   right: 0px;
-  margin: 0px 12px;
+  margin: 10px 20px;
 }
 
 @media screen and (max-height: 450px) {
