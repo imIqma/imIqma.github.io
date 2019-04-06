@@ -228,7 +228,7 @@ input, textarea {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -263,11 +263,14 @@ input, textarea {
 
 span {
     position: fixed;
-    left: 0;
-    top: 0;
-    font-size: 20px;
-    margin: 10px 10px;
-    color: white;
+    right: 0;
+    bottom: 0;
+    margin: 10px 20px;
+}
+
+span img {
+    width: 40px;
+    height: auto;
 }
 
 .none {
