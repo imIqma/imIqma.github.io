@@ -11,6 +11,7 @@ window.onload = function() {
     var link3 = document.getElementById("link3");
     var link4 = document.getElementById("link4");
     var link5 = document.getElementById("link5");
+    var link6 = document.getElementById("link6");
 
     if ( width > 768 ){
         navbar.classList.add("full");
@@ -38,6 +39,7 @@ window.onload = function() {
         link3.onclick = function(){closeNav()};
         link4.onclick = function(){closeNav()};
         link5.onclick = function(){closeNav()};
+        link6.onclick = function(){closeNav()};
     }
 
             
@@ -49,8 +51,14 @@ function received() {
 
 function openNav() {
     document.getElementById("navbar").style.width = "250px";
+
+    var link6 = document.getElementById("link6");
+    link6.classList.remove("hidden");
 }
   
 function closeNav() {
     document.getElementById("navbar").style.width = "0";
+
+    var link6 = document.getElementById("link6");
+    link6.classList.add("hidden");
 }

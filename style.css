@@ -253,11 +253,10 @@ input, textarea {
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  margin: 0px 12px;
 }
 
 @media screen and (max-height: 450px) {
@@ -265,14 +264,14 @@ input, textarea {
   .sidenav a {font-size: 18px;}
 }
 
-span {
+.toggle-button {
     position: fixed;
     right: 0;
     bottom: 0;
     margin: 10px 20px;
 }
 
-span img {
+.toggle-button img, .closebtn img {
     width: 40px;
     height: auto;
 }
