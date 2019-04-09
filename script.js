@@ -4,7 +4,6 @@ window.onload = function() {
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
     var header = document.getElementById("title");
-    var toggle = document.getElementById("toggle");
     var title = document.getElementById("title");
     var link = document.getElementById("link");
     var link2 = document.getElementById("link2");
@@ -12,6 +11,7 @@ window.onload = function() {
     var link4 = document.getElementById("link4");
     var link5 = document.getElementById("link5");
     var link6 = document.getElementById("link6");
+    var link7 = document.getElementById("link7");
 
     if ( width > 768 ){
         navbar.classList.add("full");
@@ -40,6 +40,7 @@ window.onload = function() {
         link4.onclick = function(){closeNav()};
         link5.onclick = function(){closeNav()};
         link6.onclick = function(){closeNav()};
+	link7.onclick = function(){closeNav()};
     }
 
             
@@ -63,3 +64,5 @@ function closeNav() {
     var link6 = document.getElementById("link6");
     link6.classList.add("none");
 }
+
+

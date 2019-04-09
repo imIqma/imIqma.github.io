@@ -57,8 +57,8 @@
 
 .footer {
     grid-area: footer;
-    background: rgb(255, 226, 96);
-    height: 80px;
+    background: #333;
+    height: 100px;
 }
 
 /* image grid */
@@ -116,6 +116,10 @@
 
 .gap {
     margin: 20px 0;
+}
+
+.margin-top {
+    margin-top: 20px;
 }
 
 /* grid end */
@@ -219,7 +223,7 @@ input, textarea {
     justify-content: center;
     position: fixed;
     top: 0;
-    width: 1000px;
+    width: 100vw;
     background-color: #333;
     z-index: 1;
 }
@@ -285,15 +289,11 @@ input, textarea {
 
 /* iframe properties start */
 
-.youtube iframe {
+.youtube video {
     width: 300px;
     height: 168.75px;
 }
 
-.soundcloud iframe{
-    width: 300px;
-    height: 300px;
-}
 
 /* iframe properties end */
 
@@ -305,14 +305,9 @@ input, textarea {
         grid-template-areas: 'top mid bot';
     }
 
-    .youtube iframe {
+    .youtube video {
         width: 700px;
         height: 393px;
-    }
-
-    .soundcloud iframe{
-        width: 300px;
-        height: 300px;
     }
 
     table {
@@ -330,15 +325,11 @@ input, textarea {
         width: 100vw;
     }
 
-    .youtube iframe {
+    .youtube video {
         width: 700px;
         height: 393px;
     }
 
-    .soundcloud iframe{
-        width: 300px;
-        height: 300px;
-    }
 }
 
 .test {
