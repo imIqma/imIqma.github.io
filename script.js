@@ -40,7 +40,6 @@ window.onload = function() {
         link4.onclick = function(){closeNav()};
         link5.onclick = function(){closeNav()};
         link6.onclick = function(){closeNav()};
-	link7.onclick = function(){closeNav()};
     }
 
             
