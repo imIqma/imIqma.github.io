@@ -1,4 +1,4 @@
-window.onload = function() {
+
     var width = window.innerWidth;
 
     var navbar = document.getElementById("navbar");
@@ -41,9 +41,6 @@ window.onload = function() {
         link5.onclick = function(){closeNav()};
         link6.onclick = function(){closeNav()};
     }
-
-            
-}
 
 function received() {
     alert("Comment Received");
